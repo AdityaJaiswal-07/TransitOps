@@ -1,5 +1,5 @@
-import "./CreateAccount.css"
-import { Link } from "react-router-dom"
+import "./CreateAccount.css";
+import { Link, useNavigate } from "react-router-dom";
 
 import {
   TextField,
@@ -23,6 +23,17 @@ import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 
 export default function CreateAccount() {
+  const navigate = useNavigate();
+
+  const handleCreateAccount = (event) => {
+    event.preventDefault();
+    navigate("/dashboard");
+  };
+
+  const handleSocialSignup = () => {
+    navigate("/dashboard");
+  };
+
   return (
     <div className="createAccount">
 
@@ -157,7 +168,7 @@ export default function CreateAccount() {
             Join TransitOps and streamline your fleet operations.
           </p>
 
-          <form>
+          <form onSubmit={handleCreateAccount}>
 
             <div className="grid">
 
@@ -286,6 +297,7 @@ export default function CreateAccount() {
               fullWidth
               variant="contained"
               className="createBtn"
+              type="submit"
             >
               Create Account
             </Button>
@@ -299,6 +311,8 @@ export default function CreateAccount() {
               <Button
                 variant="outlined"
                 className="socialBtn"
+                type="button"
+                onClick={handleSocialSignup}
               >
                 <FcGoogle size={24} />
                 Continue with Google
@@ -307,6 +321,8 @@ export default function CreateAccount() {
               <Button
                 variant="outlined"
                 className="socialBtn"
+                type="button"
+                onClick={handleSocialSignup}
               >
                 <FaApple size={22} />
                 Continue with Apple

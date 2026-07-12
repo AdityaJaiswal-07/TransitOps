@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f6f7fb;
+}
+
+.signin-page{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:24px;
+}
+
+.signin-card{
+    width:100%;
+    max-width:1500px;
+    height:940px;
+    background:#fff;
+    border-radius:28px;
+    overflow:hidden;
+    display:grid;
+    grid-template-columns:46% 54%;
+    box-shadow:0 15px 45px rgba(0,0,0,.08);
+}
+
+/* LEFT */
+
+.left-panel{
+    padding:55px 55px 0;
+    background:#fff;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+}
+
+.logo img{
+    width:250px;
+}
+
+.left-panel h1{
+    margin-top:35px;
+    font-size:62px;
+    line-height:1.05;
+    color:#132247;
+    font-weight:700;
+}
+
+.left-panel h1 span{
+    color:#1f67ff;
+}
+
+.subtitle{
+    margin-top:20px;
+    color:#666;
+    font-size:24px;
+    line-height:1.6;
+}
+
+.features{
+    margin-top:45px;
+}
+
+.feature{
+    display:flex;
+    gap:18px;
+    align-items:flex-start;
+    padding:18px 0;
+}
+
+.icon{
+    width:62px;
+    height:62px;
+    border-radius:16px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+}
+
+.blue{
+    color:#2979ff;
+    background:#edf4ff;
+}
+
+.green{
+    color:#18b368;
+    background:#edfdf5;
+}
+
+.orange{
+    color:#ff9800;
+    background:#fff5e5;
+}
+
+.purple{
+    color:#7254ff;
+    background:#f4f0ff;
+}
+
+.feature h4{
+    font-size:24px;
+    color:#18213f;
+    font-weight:600;
+}
+
+.feature p{
+    color:#666;
+    margin-top:6px;
+    font-size:18px;
+}
+
+.divider{
+    width:100%;
+    height:1px;
+    background:#ececec;
+}
+
+.truck-image{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+}
+
+.truck-image img{
+    width:100%;
+    display:block;
+}
+
+/* RIGHT */
+
+.right-panel{
+    background:#fff;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px;
+}
+
+.language{
+    position:absolute;
+    top:40px;
+    right:40px;
+}
+
+.language button{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    border:1px solid #ddd;
+    background:#fff;
+    padding:14px 20px;
+    border-radius:14px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.login-box{
+    width:100%;
+    max-width:650px;
+}
+
+.login-box h1{
+    text-align:center;
+    font-size:56px;
+    color:#16244c;
+}
+
+.login-box>p{
+    text-align:center;
+    color:#6d7280;
+    margin-top:12px;
+    margin-bottom:55px;
+    font-size:22px;
+}
+
+label{
+    display:block;
+    font-size:19px;
+    margin-bottom:12px;
+    color:#16244c;
+    font-weight:600;
+}
+
+.input-box{
+    width:100%;
+    height:72px;
+    border:1px solid #dadada;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    padding:0 20px;
+    margin-bottom:32px;
+}
+
+.left-icon{
+    font-size:24px;
+    color:#6d7280;
+}
+
+.right-icon{
+    margin-left:auto;
+    font-size:22px;
+    color:#6d7280;
+    cursor:pointer;
+}
+
+.input-box input{
+    border:none;
+    outline:none;
+    width:100%;
+    padding-left:18px;
+    font-size:18px;
+    background:transparent;
+}
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:28px;
+}
+
+.remember{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:17px;
+}
+
+.remember input{
+    width:18px;
+    height:18px;
+}
+
+.options a{
+    text-decoration:none;
+    color:#2168ff;
+    font-size:17px;
+}
+
+.signin-btn{
+    width:100%;
+    height:72px;
+    border:none;
+    border-radius:15px;
+    background:#1f67ff;
+    color:#fff;
+    font-size:28px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.signin-btn:hover{
+    background:#1558e5;
+}
+
+.or{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin:38px 0;
+}
+
+.or span{
+    flex:1;
+    height:1px;
+    background:#ddd;
+}
+
+.or p{
+    color:#777;
+    font-size:18px;
+}
+
+.role-select{
+    height:72px;
+    border:1px solid #ddd;
+    border-radius:15px;
+    display:flex;
+    align-items:center;
+    padding:0 20px;
+}
+
+.role-select svg{
+    font-size:22px;
+    color:#555;
+}
+
+.role-select select{
+    flex:1;
+    border:none;
+    outline:none;
+    padding-left:16px;
+    font-size:18px;
+    background:transparent;
+    appearance:none;
+    cursor:pointer;
+}
+
+.contact{
+    margin-top:50px;
+    text-align:center;
+    color:#666;
+    font-size:17px;
+}
+
+.contact a{
+    margin-left:8px;
+    color:#1f67ff;
+    text-decoration:none;
+    font-weight:500;
+}
+
+/* Responsive */
+
+@media(max-width:1200px){
+
+.signin-card{
+    grid-template-columns:1fr;
+    height:auto;
+}
+
+.left-panel{
+    display:none;
+}
+
+.right-panel{
+    padding:50px 35px;
+}
+
+.login-box{
+    max-width:650px;
+}
+
+}
+
+@media(max-width:768px){
+
+.signin-page{
+    padding:10px;
+}
+
+.signin-card{
+    border-radius:18px;
+}
+
+.language{
+    position:static;
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:25px;
+}
+
+.login-box h1{
+    font-size:38px;
+}
+
+.login-box>p{
+    font-size:17px;
+    margin-bottom:35px;
+}
+
+.input-box{
+    height:60px;
+}
+
+.signin-btn{
+    height:60px;
+    font-size:22px;
+}
+
+.role-select{
+    height:60px;
+}
+
+}
