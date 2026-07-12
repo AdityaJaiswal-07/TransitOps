@@ -1,5 +1,5 @@
-import "./CreateAccount.css";
-import { Link } from "react-router-dom";
+import "./CreateAccount.css"
+import { Link } from "react-router-dom"
 
 import {
   TextField,

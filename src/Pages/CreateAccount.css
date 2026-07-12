@@ -198,3 +198,229 @@
 .roleSelect {
   margin-top: 25px !important;
 }
+
+/* ===========================
+   Material UI TextFields
+=========================== */
+
+.MuiTextField-root {
+  margin-bottom: 0 !important;
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 12px !important;
+  background: #fff;
+  height: 60px;
+}
+
+.MuiOutlinedInput-input {
+  font-size: 15px !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #d8dde6 !important;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #2468ff !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-width: 2px !important;
+  border-color: #2468ff !important;
+}
+
+.MuiInputLabel-root {
+  color: #4b5563 !important;
+  font-weight: 500 !important;
+}
+
+.MuiInputLabel-root.Mui-focused {
+  color: #2468ff !important;
+}
+
+.MuiInputAdornment-root svg {
+  color: #8d98aa;
+  font-size: 20px;
+}
+
+/* ===========================
+   Checkbox
+=========================== */
+
+.MuiFormControlLabel-root {
+  margin-top: 18px !important;
+  margin-left: 2px !important;
+  align-items: flex-start !important;
+}
+
+.MuiCheckbox-root {
+  padding-top: 0 !important;
+}
+
+.MuiCheckbox-root.Mui-checked {
+  color: #2468ff !important;
+}
+
+.linkBlue {
+  color: #2468ff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ===========================
+   Create Button
+=========================== */
+
+.createBtn {
+  margin-top: 18px !important;
+  height: 58px;
+  border-radius: 12px !important;
+  text-transform: none !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  background: #2468ff !important;
+  box-shadow: none !important;
+}
+
+.createBtn:hover {
+  background: #1f5ce0 !important;
+}
+
+/* ===========================
+   Divider
+=========================== */
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.divider span {
+  padding: 0 16px;
+  color: #777;
+  font-size: 14px;
+}
+
+/* ===========================
+   Social Buttons
+=========================== */
+
+.socialButtons {
+  display: flex;
+  gap: 18px;
+}
+
+.socialBtn {
+  flex: 1;
+  height: 56px;
+  border-radius: 12px !important;
+  text-transform: none !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: #222 !important;
+  border-color: #d9dde5 !important;
+  display: flex !important;
+  gap: 10px;
+}
+
+.socialBtn:hover {
+  border-color: #2468ff !important;
+  background: #f7f9ff !important;
+}
+
+/* ===========================
+   Bottom Text
+=========================== */
+
+.bottomText {
+  margin-top: 30px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 1200px) {
+
+  .leftSection {
+    display: none;
+  }
+
+  .rightSection {
+    width: 100%;
+    padding: 40px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .createAccount {
+    padding: 15px;
+  }
+
+  .rightSection {
+    padding: 25px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .socialButtons {
+    flex-direction: column;
+  }
+
+  .formWrapper h1 {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .loginTop {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .rightSection {
+    padding: 20px;
+  }
+
+  .MuiOutlinedInput-root {
+    height: 55px;
+  }
+
+  .createBtn {
+    height: 54px;
+  }
+
+  .socialBtn {
+    height: 54px;
+  }
+
+  .formWrapper h1 {
+    font-size: 28px;
+  }
+
+}
